@@ -1,6 +1,496 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-22T03:00:00Z",
-  "tooling": {},
-  "findings": {}
+  "generated_at": "2026-08-24T08:29:20Z",
+  "tooling": {
+    "syft": "1.51.0",
+    "grype": "0.117.0",
+    "grype_db_built": "2026-08-24T06:22:13Z",
+    "grype_db_schema_version": "v6.1.9"
+  },
+  "findings": {
+    "CVE-2018-18074::python::requests": {
+      "id": "CVE-2018-18074",
+      "aliases": [
+        "CVE-2018-18074",
+        "GHSA-x84v-xcm2-53pg"
+      ],
+      "package": {
+        "name": "requests",
+        "type": "python",
+        "versions": [
+          "2.19.1"
+        ]
+      },
+      "severity": "High",
+      "fixed_in": [
+        "2.20.0"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "issue_number": 1
+    },
+    "CVE-2020-14343::python::pyyaml": {
+      "id": "CVE-2020-14343",
+      "aliases": [
+        "CVE-2020-14343",
+        "GHSA-8q59-q68h-6hv4"
+      ],
+      "package": {
+        "name": "pyyaml",
+        "type": "python",
+        "versions": [
+          "5.3.1"
+        ]
+      },
+      "severity": "Critical",
+      "fixed_in": [
+        "5.4"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "issue_number": 2
+    },
+    "CVE-2022-40897::python::setuptools": {
+      "id": "CVE-2022-40897",
+      "aliases": [
+        "CVE-2022-40897",
+        "GHSA-r9hx-vwmv-q579"
+      ],
+      "package": {
+        "name": "setuptools",
+        "type": "python",
+        "versions": [
+          "65.5.0"
+        ]
+      },
+      "severity": "High",
+      "fixed_in": [
+        "65.5.1"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "issue_number": 4
+    },
+    "CVE-2023-32681::python::requests": {
+      "id": "CVE-2023-32681",
+      "aliases": [
+        "CVE-2023-32681",
+        "GHSA-j8r2-6x86-q33q"
+      ],
+      "package": {
+        "name": "requests",
+        "type": "python",
+        "versions": [
+          "2.19.1"
+        ]
+      },
+      "severity": "Medium",
+      "fixed_in": [
+        "2.31.0"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "issue_number": null
+    },
+    "CVE-2023-45803::python::urllib3": {
+      "id": "CVE-2023-45803",
+      "aliases": [
+        "CVE-2023-45803",
+        "GHSA-g4mx-q9vg-27p4"
+      ],
+      "package": {
+        "name": "urllib3",
+        "type": "python",
+        "versions": [
+          "1.26.17"
+        ]
+      },
+      "severity": "Medium",
+      "fixed_in": [
+        "1.26.18"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "issue_number": null
+    },
+    "CVE-2024-22195::python::jinja2": {
+      "id": "CVE-2024-22195",
+      "aliases": [
+        "CVE-2024-22195",
+        "GHSA-h5c8-rqwp-cp95"
+      ],
+      "package": {
+        "name": "jinja2",
+        "type": "python",
+        "versions": [
+          "3.1.2"
+        ]
+      },
+      "severity": "Medium",
+      "fixed_in": [
+        "3.1.3"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "issue_number": null
+    },
+    "CVE-2024-34064::python::jinja2": {
+      "id": "CVE-2024-34064",
+      "aliases": [
+        "CVE-2024-34064",
+        "GHSA-h75v-3vvj-5mfj"
+      ],
+      "package": {
+        "name": "jinja2",
+        "type": "python",
+        "versions": [
+          "3.1.2"
+        ]
+      },
+      "severity": "Medium",
+      "fixed_in": [
+        "3.1.4"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "issue_number": null
+    },
+    "CVE-2024-35195::python::requests": {
+      "id": "CVE-2024-35195",
+      "aliases": [
+        "CVE-2024-35195",
+        "GHSA-9wx4-h78v-vm56"
+      ],
+      "package": {
+        "name": "requests",
+        "type": "python",
+        "versions": [
+          "2.19.1"
+        ]
+      },
+      "severity": "Medium",
+      "fixed_in": [
+        "2.32.0"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "issue_number": null
+    },
+    "CVE-2024-37891::python::urllib3": {
+      "id": "CVE-2024-37891",
+      "aliases": [
+        "CVE-2024-37891",
+        "GHSA-34jh-p97f-mpxf"
+      ],
+      "package": {
+        "name": "urllib3",
+        "type": "python",
+        "versions": [
+          "1.26.17"
+        ]
+      },
+      "severity": "Medium",
+      "fixed_in": [
+        "1.26.19"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "issue_number": null
+    },
+    "CVE-2024-47081::python::requests": {
+      "id": "CVE-2024-47081",
+      "aliases": [
+        "CVE-2024-47081",
+        "GHSA-9hjg-9r4m-mvj7"
+      ],
+      "package": {
+        "name": "requests",
+        "type": "python",
+        "versions": [
+          "2.19.1"
+        ]
+      },
+      "severity": "Medium",
+      "fixed_in": [
+        "2.32.4"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "issue_number": null
+    },
+    "CVE-2024-56201::python::jinja2": {
+      "id": "CVE-2024-56201",
+      "aliases": [
+        "CVE-2024-56201",
+        "GHSA-gmj6-6f8f-6699"
+      ],
+      "package": {
+        "name": "jinja2",
+        "type": "python",
+        "versions": [
+          "3.1.2"
+        ]
+      },
+      "severity": "Medium",
+      "fixed_in": [
+        "3.1.5"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "issue_number": null
+    },
+    "CVE-2024-56326::python::jinja2": {
+      "id": "CVE-2024-56326",
+      "aliases": [
+        "CVE-2024-56326",
+        "GHSA-q2x7-8rv6-6q7h"
+      ],
+      "package": {
+        "name": "jinja2",
+        "type": "python",
+        "versions": [
+          "3.1.2"
+        ]
+      },
+      "severity": "Medium",
+      "fixed_in": [
+        "3.1.5"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "issue_number": null
+    },
+    "CVE-2024-6345::python::setuptools": {
+      "id": "CVE-2024-6345",
+      "aliases": [
+        "CVE-2024-6345",
+        "GHSA-cx63-2mw6-8hw5"
+      ],
+      "package": {
+        "name": "setuptools",
+        "type": "python",
+        "versions": [
+          "65.5.0"
+        ]
+      },
+      "severity": "High",
+      "fixed_in": [
+        "70.0.0"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "issue_number": 5
+    },
+    "CVE-2025-27516::python::jinja2": {
+      "id": "CVE-2025-27516",
+      "aliases": [
+        "CVE-2025-27516",
+        "GHSA-cpwx-vrp4-4pq7"
+      ],
+      "package": {
+        "name": "jinja2",
+        "type": "python",
+        "versions": [
+          "3.1.2"
+        ]
+      },
+      "severity": "Medium",
+      "fixed_in": [
+        "3.1.6"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "issue_number": null
+    },
+    "CVE-2025-47273::python::setuptools": {
+      "id": "CVE-2025-47273",
+      "aliases": [
+        "CVE-2025-47273",
+        "GHSA-5rjg-fvgr-3xxf"
+      ],
+      "package": {
+        "name": "setuptools",
+        "type": "python",
+        "versions": [
+          "65.5.0"
+        ]
+      },
+      "severity": "High",
+      "fixed_in": [
+        "78.1.1"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "issue_number": 6
+    },
+    "CVE-2025-50181::python::urllib3": {
+      "id": "CVE-2025-50181",
+      "aliases": [
+        "CVE-2025-50181",
+        "GHSA-pq67-6m6q-mj2v"
+      ],
+      "package": {
+        "name": "urllib3",
+        "type": "python",
+        "versions": [
+          "1.26.17"
+        ]
+      },
+      "severity": "Medium",
+      "fixed_in": [
+        "2.5.0"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "issue_number": null
+    },
+    "CVE-2025-66418::python::urllib3": {
+      "id": "CVE-2025-66418",
+      "aliases": [
+        "CVE-2025-66418",
+        "GHSA-gm62-xv2j-4w53"
+      ],
+      "package": {
+        "name": "urllib3",
+        "type": "python",
+        "versions": [
+          "1.26.17"
+        ]
+      },
+      "severity": "High",
+      "fixed_in": [
+        "2.6.0"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "issue_number": 8
+    },
+    "CVE-2025-66471::python::urllib3": {
+      "id": "CVE-2025-66471",
+      "aliases": [
+        "CVE-2025-66471",
+        "GHSA-2xpw-w6gg-jr37"
+      ],
+      "package": {
+        "name": "urllib3",
+        "type": "python",
+        "versions": [
+          "1.26.17"
+        ]
+      },
+      "severity": "High",
+      "fixed_in": [
+        "2.6.0"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "issue_number": 7
+    },
+    "CVE-2026-21441::python::urllib3": {
+      "id": "CVE-2026-21441",
+      "aliases": [
+        "CVE-2026-21441",
+        "GHSA-38jv-5279-wg99"
+      ],
+      "package": {
+        "name": "urllib3",
+        "type": "python",
+        "versions": [
+          "1.26.17"
+        ]
+      },
+      "severity": "High",
+      "fixed_in": [
+        "2.6.3"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "issue_number": 3
+    },
+    "CVE-2026-25645::python::requests": {
+      "id": "CVE-2026-25645",
+      "aliases": [
+        "CVE-2026-25645",
+        "GHSA-gc5v-m9x4-r6x2"
+      ],
+      "package": {
+        "name": "requests",
+        "type": "python",
+        "versions": [
+          "2.19.1"
+        ]
+      },
+      "severity": "Medium",
+      "fixed_in": [
+        "2.33.0"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "issue_number": null
+    },
+    "CVE-2026-44431::python::urllib3": {
+      "id": "CVE-2026-44431",
+      "aliases": [
+        "CVE-2026-44431",
+        "GHSA-qccp-gfcp-xxvc"
+      ],
+      "package": {
+        "name": "urllib3",
+        "type": "python",
+        "versions": [
+          "1.26.17"
+        ]
+      },
+      "severity": "High",
+      "fixed_in": [
+        "2.7.0"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "issue_number": 9
+    },
+    "CVE-2026-59890::python::setuptools": {
+      "id": "CVE-2026-59890",
+      "aliases": [
+        "CVE-2026-59890",
+        "GHSA-h35f-9h28-mq5c"
+      ],
+      "package": {
+        "name": "setuptools",
+        "type": "python",
+        "versions": [
+          "65.5.0"
+        ]
+      },
+      "severity": "Medium",
+      "fixed_in": [
+        "83.0.0"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-08-24",
+      "issue_number": null
+    }
+  }
 }
