@@ -11,6 +11,12 @@ on:
         description: "Print the issues that would be filed instead of filing them"
         type: boolean
         default: true
+  schedule:
+    # 03:17 UTC. The minute is offset deliberately: every cron on GitHub fires
+    # at the top of the hour and the queue is worst there. GitHub does not
+    # adjust for DST, so this drifts between 05:17 and 04:17 in Germany across
+    # the year, which is fine for a daily scan.
+    - cron: '17 3 * * *'
 
 # contents:write for the state file commit-back, issues:write to file issues.
 # Nothing else, per CLAUDE.md.
@@ -31,6 +37,17 @@ env:
   # happen on a version bump someone chose, not on an unrelated Tuesday.
   SYFT_VERSION: v1.51.0
   GRYPE_VERSION: v0.117.0
+
+  # A schedule event carries no inputs, so inputs.dry_run is empty. Defaulting
+  # that to "false" means an absent input files for real and only an explicit
+  # tick previews. The other way round, every scheduled run would quietly take
+  # the dry-run branch and file nothing while the logs looked healthy - which
+  # is the failure a watchdog cannot afford. Caution belongs on the manual
+  # button; the schedule has to actually work.
+  #
+  # Everything that branches on dry-run reads this one value, so the shell and
+  # the commit gate cannot drift apart.
+  DRY_RUN: ${{ inputs.dry_run || 'false' }}
 
 jobs:
   scan:
@@ -192,13 +209,12 @@ jobs:
           # Through the environment, never as an argument: arguments show up in
           # process listings and in logs.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DRY_RUN: ${{ inputs.dry_run }}
         run: |
           set -euo pipefail
-          if [ "${DRY_RUN}" = "false" ]; then
-            issues_flag="--file-issues"
-          else
+          if [ "${DRY_RUN}" = "true" ]; then
             issues_flag="--dry-run-issues"
+          else
+            issues_flag="--file-issues"
           fi
           echo "issue mode: ${issues_flag}"
           python -m src.run --scan out/grype.json --state .sbom-watchdog/findings.json --write-state --message-file out/commit-message.txt --repo "${GITHUB_REPOSITORY}" "${issues_flag}" --syft-version "${SYFT_VERSION#v}"
@@ -212,7 +228,7 @@ jobs:
       # commit is the irreversible half, and it should be impossible to
       # reach from a preview by any route.
       - name: Commit the updated state file
-        if: always() && inputs.dry_run != true && steps.state.outputs.state_changed == 'true'
+        if: always() && env.DRY_RUN != 'true' && steps.state.outputs.state_changed == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
