@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-02T09:51:32Z",
+  "generated_at": "2026-10-03T09:14:22Z",
   "tooling": {
     "syft": "1.51.0",
     "grype": "0.117.0",
-    "grype_db_built": "2026-10-02T06:31:53Z",
-    "grype_db_schema_version": "v6.1.9"
+    "grype_db_built": "2026-10-03T06:31:58Z",
+    "grype_db_schema_version": "v6.1.10"
   },
   "findings": {
     "CVE-2018-18074::python::requests": {
@@ -27,7 +27,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-02",
+      "last_seen": "2026-10-03",
       "issue_number": 1,
       "resolved_on": null
     },
@@ -50,7 +50,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-02",
+      "last_seen": "2026-10-03",
       "issue_number": 2,
       "resolved_on": null
     },
@@ -73,7 +73,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-02",
+      "last_seen": "2026-10-03",
       "issue_number": 4,
       "resolved_on": null
     },
@@ -96,7 +96,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-02",
+      "last_seen": "2026-10-03",
       "issue_number": null,
       "resolved_on": null
     },
@@ -142,7 +142,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-02",
+      "last_seen": "2026-10-03",
       "issue_number": null,
       "resolved_on": null
     },
@@ -165,7 +165,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-02",
+      "last_seen": "2026-10-03",
       "issue_number": null,
       "resolved_on": null
     },
@@ -188,7 +188,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-02",
+      "last_seen": "2026-10-03",
       "issue_number": null,
       "resolved_on": null
     },
@@ -234,7 +234,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-02",
+      "last_seen": "2026-10-03",
       "issue_number": null,
       "resolved_on": null
     },
@@ -257,7 +257,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-02",
+      "last_seen": "2026-10-03",
       "issue_number": null,
       "resolved_on": null
     },
@@ -280,7 +280,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-02",
+      "last_seen": "2026-10-03",
       "issue_number": null,
       "resolved_on": null
     },
@@ -303,7 +303,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-02",
+      "last_seen": "2026-10-03",
       "issue_number": 5,
       "resolved_on": null
     },
@@ -326,7 +326,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-02",
+      "last_seen": "2026-10-03",
       "issue_number": null,
       "resolved_on": null
     },
@@ -349,7 +349,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-02",
+      "last_seen": "2026-10-03",
       "issue_number": 6,
       "resolved_on": null
     },
@@ -464,7 +464,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-02",
+      "last_seen": "2026-10-03",
       "issue_number": null,
       "resolved_on": null
     },
@@ -510,7 +510,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-02",
+      "last_seen": "2026-10-03",
       "issue_number": null,
       "resolved_on": null
     },
@@ -533,7 +533,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-10-01",
-      "last_seen": "2026-10-02",
+      "last_seen": "2026-10-03",
       "issue_number": 11,
       "resolved_on": null
     },
@@ -556,7 +556,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-10-01",
-      "last_seen": "2026-10-02",
+      "last_seen": "2026-10-03",
       "issue_number": null,
       "resolved_on": null
     },
@@ -579,7 +579,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-10-01",
-      "last_seen": "2026-10-02",
+      "last_seen": "2026-10-03",
       "issue_number": 10,
       "resolved_on": null
     }
