@@ -1,19 +1,21 @@
-# Keep the local development tree out of the inventory. On a clean checkout
-# none of these exist, which is exactly why the exclusions are easy to forget:
-# without them `syft scan dir:.` on a developer machine inventories the venv
-# and the vendored scanner binaries and reports several hundred components.
+# Keep anything that is not this project's own dependency list out of the
+# inventory. On a clean checkout most of these do not exist, which is exactly
+# why the exclusions are easy to forget: without them `syft scan dir:.` on a
+# developer machine inventories a virtualenv and reports hundreds of components.
+#
+# sboms/ holds the dated CycloneDX history this repository commits. Those files
+# describe this project; scanning them would count its dependencies twice.
 exclude:
   - ./.venv/**
-  - ./scratch/**
   - ./.git/**
   - ./node_modules/**
+  - ./sboms/**
 
 file:
   metadata:
     # Default is 'owned-by-package', which emits a file-type component for
-    # every manifest that owns a package — the workflow file and
-    # requirements-dev.txt. Those components have no purl and no version, and
-    # they carry the absolute path of whatever machine ran the scan. Phase 5
-    # commits this SBOM as the audit trail, so a path that moves with the
-    # runner would make every diff noisy for no information gained.
+    # every manifest that owns a package. Those components have no purl and no
+    # version, and they carry the absolute path of whatever machine ran the
+    # scan. The dated SBOM history is committed as an audit trail, so a path
+    # that moves with the runner would make every diff noisy for no gain.
     selection: 'none'
