@@ -78,8 +78,8 @@ jobs:
       - name: Scan for new vulnerabilities
         id: watchdog
         continue-on-error: true
-        # v1.5. Adopters can write @v1 to follow compatible releases.
-        uses: Johndenisnyagah/sbom-watchdog@e02b53e32f8be2470ff596f8c23c023e8337f0c8  # v1.5
+        # v1.6. Adopters can write @v1 to follow compatible releases.
+        uses: Johndenisnyagah/sbom-watchdog@8f60f142e5cd9293b80564f648e209c53c255193  # v1.6
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           dry-run: ${{ env.DRY_RUN }}

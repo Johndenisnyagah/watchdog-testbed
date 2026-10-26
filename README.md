@@ -29,7 +29,7 @@ A normal adopter's first run is different from 24 August: with no state file, it
 
 ## How it runs
 
-[`.github/workflows/watchdog.yml`](.github/workflows/watchdog.yml) calls the published action, pinned to the commit behind `v1.5`. Adopters can write `@v1` instead to pick up compatible releases. Until 25 October 2026 this repository ran a copied, older version of the scanner's code from a `src/` folder; it now runs only the published action, so what you see is what an adopter gets. Issues filed before that date use the older issue wording.
+[`.github/workflows/watchdog.yml`](.github/workflows/watchdog.yml) calls the published action, pinned to the commit behind `v1.6`. Adopters can write `@v1` instead to pick up compatible releases. Until 25 October 2026 this repository ran a copied, older version of the scanner's code from a `src/` folder; it now runs only the published action, so what you see is what an adopter gets. Issues filed before that date use the older issue wording.
 
 The workflow commits the state file, the inventory and the dated SBOM itself, as the action's README recommends. A run whose issue filing fails part way still commits the issue numbers it collected and then fails, so nothing is filed twice.
 
