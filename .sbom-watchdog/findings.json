@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-25T08:30:23Z",
+  "generated_at": "2026-10-26T08:37:05Z",
   "tooling": {
     "syft": "1.51.0",
     "grype": "0.117.0",
-    "grype_db_built": "2026-10-25T06:27:34Z",
+    "grype_db_built": "2026-10-26T06:38:44Z",
     "grype_db_schema_version": "v6.1.10"
   },
   "findings": {
@@ -27,7 +27,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-25",
+      "last_seen": "2026-10-26",
       "issue_number": 1,
       "resolved_on": null
     },
@@ -50,8 +50,123 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-25",
+      "last_seen": "2026-10-26",
       "issue_number": 2,
+      "resolved_on": null
+    },
+    "CVE-2020-15168::npm::node-fetch": {
+      "id": "CVE-2020-15168",
+      "aliases": [
+        "CVE-2020-15168",
+        "GHSA-w7rc-rwvf-8q5r"
+      ],
+      "package": {
+        "name": "node-fetch",
+        "type": "npm",
+        "versions": [
+          "2.6.0"
+        ]
+      },
+      "severity": "Low",
+      "fixed_in": [
+        "2.6.1"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-10-26",
+      "last_seen": "2026-10-26",
+      "issue_number": null,
+      "resolved_on": null
+    },
+    "CVE-2020-7598::npm::minimist": {
+      "id": "CVE-2020-7598",
+      "aliases": [
+        "CVE-2020-7598",
+        "GHSA-vh95-rmgr-6w4m"
+      ],
+      "package": {
+        "name": "minimist",
+        "type": "npm",
+        "versions": [
+          "0.0.8"
+        ]
+      },
+      "severity": "Medium",
+      "fixed_in": [
+        "0.2.1"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-10-26",
+      "last_seen": "2026-10-26",
+      "issue_number": null,
+      "resolved_on": null
+    },
+    "CVE-2021-44906::npm::minimist": {
+      "id": "CVE-2021-44906",
+      "aliases": [
+        "CVE-2021-44906",
+        "GHSA-xvch-5gv4-984h"
+      ],
+      "package": {
+        "name": "minimist",
+        "type": "npm",
+        "versions": [
+          "0.0.8"
+        ]
+      },
+      "severity": "Critical",
+      "fixed_in": [
+        "0.2.4"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-10-26",
+      "last_seen": "2026-10-26",
+      "issue_number": 14,
+      "resolved_on": null
+    },
+    "CVE-2022-0235::npm::node-fetch": {
+      "id": "CVE-2022-0235",
+      "aliases": [
+        "CVE-2022-0235",
+        "GHSA-r683-j2x4-v87g"
+      ],
+      "package": {
+        "name": "node-fetch",
+        "type": "npm",
+        "versions": [
+          "2.6.0"
+        ]
+      },
+      "severity": "High",
+      "fixed_in": [
+        "2.6.7"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-10-26",
+      "last_seen": "2026-10-26",
+      "issue_number": 16,
+      "resolved_on": null
+    },
+    "CVE-2022-25883::npm::semver": {
+      "id": "CVE-2022-25883",
+      "aliases": [
+        "CVE-2022-25883",
+        "GHSA-c2qf-rxjj-qqgw"
+      ],
+      "package": {
+        "name": "semver",
+        "type": "npm",
+        "versions": [
+          "5.7.1"
+        ]
+      },
+      "severity": "High",
+      "fixed_in": [
+        "5.7.2"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-10-26",
+      "last_seen": "2026-10-26",
+      "issue_number": 15,
       "resolved_on": null
     },
     "CVE-2022-40897::python::setuptools": {
@@ -73,7 +188,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-25",
+      "last_seen": "2026-10-26",
       "issue_number": 4,
       "resolved_on": null
     },
@@ -96,8 +211,31 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-25",
+      "last_seen": "2026-10-26",
       "issue_number": null,
+      "resolved_on": null
+    },
+    "CVE-2023-45133::npm::@babel/traverse": {
+      "id": "CVE-2023-45133",
+      "aliases": [
+        "CVE-2023-45133",
+        "GHSA-67hx-6x53-jw92"
+      ],
+      "package": {
+        "name": "@babel/traverse",
+        "type": "npm",
+        "versions": [
+          "7.23.0"
+        ]
+      },
+      "severity": "Critical",
+      "fixed_in": [
+        "7.23.2"
+      ],
+      "fix_state": "fixed",
+      "first_seen": "2026-10-26",
+      "last_seen": "2026-10-26",
+      "issue_number": 17,
       "resolved_on": null
     },
     "CVE-2023-45803::python::urllib3": {
@@ -142,7 +280,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-25",
+      "last_seen": "2026-10-26",
       "issue_number": null,
       "resolved_on": null
     },
@@ -165,7 +303,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-25",
+      "last_seen": "2026-10-26",
       "issue_number": null,
       "resolved_on": null
     },
@@ -188,7 +326,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-25",
+      "last_seen": "2026-10-26",
       "issue_number": null,
       "resolved_on": null
     },
@@ -234,7 +372,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-25",
+      "last_seen": "2026-10-26",
       "issue_number": null,
       "resolved_on": null
     },
@@ -257,7 +395,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-25",
+      "last_seen": "2026-10-26",
       "issue_number": null,
       "resolved_on": null
     },
@@ -280,7 +418,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-25",
+      "last_seen": "2026-10-26",
       "issue_number": null,
       "resolved_on": null
     },
@@ -303,7 +441,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-25",
+      "last_seen": "2026-10-26",
       "issue_number": 5,
       "resolved_on": null
     },
@@ -326,7 +464,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-25",
+      "last_seen": "2026-10-26",
       "issue_number": null,
       "resolved_on": null
     },
@@ -349,7 +487,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-25",
+      "last_seen": "2026-10-26",
       "issue_number": 6,
       "resolved_on": null
     },
@@ -464,7 +602,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-25",
+      "last_seen": "2026-10-26",
       "issue_number": null,
       "resolved_on": null
     },
@@ -510,7 +648,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-10-25",
+      "last_seen": "2026-10-26",
       "issue_number": null,
       "resolved_on": null
     },
@@ -533,7 +671,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-10-01",
-      "last_seen": "2026-10-25",
+      "last_seen": "2026-10-26",
       "issue_number": 11,
       "resolved_on": null
     },
@@ -556,7 +694,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-10-01",
-      "last_seen": "2026-10-25",
+      "last_seen": "2026-10-26",
       "issue_number": null,
       "resolved_on": null
     },
@@ -579,7 +717,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-10-01",
-      "last_seen": "2026-10-25",
+      "last_seen": "2026-10-26",
       "issue_number": 10,
       "resolved_on": null
     },
@@ -601,7 +739,7 @@
       ],
       "fix_state": "fixed",
       "first_seen": "2026-10-25",
-      "last_seen": "2026-10-25",
+      "last_seen": "2026-10-26",
       "issue_number": null,
       "resolved_on": null
     }
