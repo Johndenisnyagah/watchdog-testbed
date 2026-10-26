@@ -11,7 +11,7 @@ This is the live demo for [sbom-watchdog](https://github.com/Johndenisnyagah/sbo
 - **[Issues](../../issues?q=is%3Aissue)**: filed and closed by `github-actions[bot]`, never by hand.
 - **[Commit history](../../commits/main)**: one state commit per day, with a message saying what moved (`N new, M resolved`) or `no change (scan of YYYY-MM-DD)`.
 - **[`.sbom-watchdog/findings.json`](.sbom-watchdog/findings.json)**: the committed record of every finding, with `first_seen`, `last_seen`, the issue it was filed under, and `resolved_on`.
-- **[`SECURITY-INVENTORY.md`](SECURITY-INVENTORY.md)** and **[`sboms/`](sboms/)**: a plain-language summary and one dated CycloneDX SBOM per day, written from the first scan after the switch to the published action (see below).
+- **[`SECURITY-INVENTORY.md`](SECURITY-INVENTORY.md)** and **[`sboms/`](sboms/)**: a plain-language summary and one dated CycloneDX SBOM per day, written daily since 26 October 2026.
 - **[Workflow runs](../../actions/workflows/watchdog.yml)**: the daily 03:17 UTC scan.
 
 ## What has happened so far
@@ -23,7 +23,7 @@ This is the live demo for [sbom-watchdog](https://github.com/Johndenisnyagah/sbo
 | 25 Aug – 30 Sep | Filed nothing; committed `no change` daily | Nothing new was published against these versions |
 | **1 Oct 2026** | **Filed #10 and #11** | **Two vulnerabilities in `urllib3` 2.7.0 were newly published. This is the case the tool exists for: a dependency that was clean yesterday is vulnerable today.** |
 | 25 Oct 2026 | Recorded one new finding, filed no issue | It is rated Low, below the `High` threshold. Every finding is recorded; only High and above become issues |
-| First scan after npm was added | Records the npm findings and files issues for the Critical and High ones | A second ecosystem, seeded on purpose like 24 August, to show npm handled end to end: a scoped package (`@babel/traverse`), a vulnerable dependency pulled in by another (`minimist` via `mkdirp`), and a fix that exists only as a pre-release on the next major version. The exact date and issue numbers are filled in once it has run. |
+| 26 Oct 2026 | Recorded 6 npm findings and filed #14–#17 for the Critical and High ones; wrote the first `SECURITY-INVENTORY.md` and `sboms/2026-10-26.json` | A second ecosystem, seeded on purpose like 24 August, to show npm handled end to end: a scoped package (`@babel/traverse`, #17), a vulnerability arriving through a dependency nobody listed (`minimist` via `mkdirp`, #14), and two findings on one package resolved by a single upgrade (`node-fetch`, #16). The inventory now names the ecosystem of each row, because it spans Python and npm. |
 
 A normal adopter's first run is different from 24 August: with no state file, it records a baseline and files nothing, so installing the tool on a large project does not open hundreds of issues at once.
 
@@ -39,7 +39,7 @@ The workflow commits the state file, the inventory and the dated SBOM itself, as
 
 | Package | Why it is here |
 | --- | --- |
-| `@babel/traverse` 7.23.0 | A scoped name, and a Critical advisory whose fix also exists as an 8.0 pre-release |
+| `@babel/traverse` 7.23.0 | A scoped name with a Critical advisory |
 | `mkdirp` 0.5.1 | Pulls in `minimist` 0.0.8, so a vulnerability arrives through a dependency nobody listed |
 | `node-fetch` 2.6.0 | A High and a Low advisory on one package |
 | `semver` 5.7.1 | A High advisory with a single, stable fix |
