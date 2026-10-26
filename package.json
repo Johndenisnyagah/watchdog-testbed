@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "description": "Deliberately vulnerable scan target for sbom-watchdog. Never install this.",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@babel/traverse": "7.23.0",
+    "mkdirp": "0.5.1",
+    "node-fetch": "2.6.0",
+    "semver": "5.7.1"
+  }
+}

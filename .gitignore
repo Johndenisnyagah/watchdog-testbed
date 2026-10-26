@@ -1,5 +1,7 @@
 .venv/
 __pycache__/
 .pytest_cache/
+# package-lock.json is committed so Syft can read the tree; nothing is installed.
+node_modules/
 
 # .sbom-watchdog/ is deliberately NOT ignored — the scanner commits state there.
