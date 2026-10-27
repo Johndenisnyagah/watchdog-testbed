@@ -2,7 +2,7 @@
 
 This file is generated automatically and should not be edited by hand. It lists every known security vulnerability in the software this project depends on, and what can be done about each one.
 
-**Last checked:** 26 October 2026  
+**Last checked:** 27 October 2026  
 **Vulnerabilities currently open:** 25  
 **Vulnerabilities resolved since tracking began:** 7
 
@@ -74,10 +74,10 @@ Every open vulnerability has a published fix available.
 
 | | |
 | --- | --- |
-| Date of this check | 26 October 2026 |
+| Date of this check | 27 October 2026 |
 | Software inventory produced by | Syft 1.51.0 |
 | Vulnerabilities identified by | Grype 0.117.0 |
-| Vulnerability data published on | 26 October 2026 |
+| Vulnerability data published on | 27 October 2026 |
 
 The check runs automatically on a schedule. The full list of software components is recorded under `sboms/`, one file per day the check ran, so the absence of a file for a given date means no check ran that day.
 
